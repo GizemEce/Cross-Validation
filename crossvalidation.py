@@ -39,7 +39,7 @@ def crossvalidation(lon,n):
 
 print crossvalidation(data,3)
 print crossvalidation(data,4)
-print "Now returnlisteler function is working"
+print "Now returnlists function is working"
 
 
 
@@ -49,7 +49,7 @@ print "Now returnlisteler function is working"
                                                [2, 5, 8, 0, 3, 6, 9] [1, 4, 7]
                                                [0, 3, 6, 9, 1, 4, 7] [2, 5, 8]"""
 
-def returnlisteler(lon,n):
+def returnlists(lon,n):
 	d=crossvalidation(lon,n)
 	print "Traning Sets"," "*9,"Test Sets"
 	for i in d:
@@ -57,12 +57,12 @@ def returnlisteler(lon,n):
 		for j in i:
 			lon.append(j)
 
-returnlisteler(data,2)
+returnlists(data,2)
 print"****************"
-returnlisteler(data,3)
+returnlists(data,3)
 print"****************"
-returnlisteler(data,4)
+returnlists(data,4)
 print"****************"
-returnlisteler(data,5)
+returnlists(data,5)
 print"****************"
-returnlisteler(data,10)
+returnlists(data,10)
