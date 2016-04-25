@@ -26,50 +26,7 @@ are averaged over the rounds.
  
  #Leave-one-out cross-validation
  When k=n (the number of observations), the k-fold cross-validation is exactly the leave-one-out cross-validation.
- 
- #Example Output
- 
-Data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-k-fold cross validation
-where k is 2:
-     training        test
-[1, 3, 5, 7, 9] [0, 2, 4, 6, 8]
-[0, 2, 4, 6, 8] [1, 3, 5, 7, 9]
-
-where k is 3:
-     training         test
-[1, 2, 4, 5, 7, 8] [0, 3, 6, 9]
-[0, 2, 3, 5, 6, 8, 9] [1, 4, 7]
-[0, 1, 3, 4, 6, 7, 9] [2, 5, 8]
-
-where k is 4:
-     training           test
-[1, 2, 3, 5, 6, 7, 9] [0, 4, 8]
-[0, 2, 3, 4, 6, 7, 8] [1, 5, 9]
-[0, 1, 3, 4, 5, 7, 8, 9] [2, 6]
-[0, 1, 2, 4, 5, 6, 8, 9] [3, 7]
-
-where k is 5:
-     training             test
-[1, 2, 3, 4, 6, 7, 8, 9] [0, 5]
-[0, 2, 3, 4, 5, 7, 8, 9] [1, 6]
-[0, 1, 3, 4, 5, 6, 8, 9] [2, 7]
-[0, 1, 2, 4, 5, 6, 7, 9] [3, 8]
-[0, 1, 2, 3, 5, 6, 7, 8] [4, 9]
-
-Leave-one-out cross-validation
-     training               test
-[1, 2, 3, 4, 5, 6, 7, 8, 9] [0]
-[0, 2, 3, 4, 5, 6, 7, 8, 9] [1]
-[0, 1, 3, 4, 5, 6, 7, 8, 9] [2]
-[0, 1, 2, 4, 5, 6, 7, 8, 9] [3]
-[0, 1, 2, 3, 5, 6, 7, 8, 9] [4]
-[0, 1, 2, 3, 4, 6, 7, 8, 9] [5]
-[0, 1, 2, 3, 4, 5, 7, 8, 9] [6]
-[0, 1, 2, 3, 4, 5, 6, 8, 9] [7]
-[0, 1, 2, 3, 4, 5, 6, 7, 9] [8]
-[0, 1, 2, 3, 4, 5, 6, 7, 8] [9]
 
 Reference:https://en.wikipedia.org/wiki/Cross-validation_%28statistics%29
 **************************************************************************************************************************
